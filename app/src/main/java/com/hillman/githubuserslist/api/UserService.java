@@ -13,7 +13,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Created by hllman on 13.09.17.
+ * Created by hllman
  */
 
 public class UserService {

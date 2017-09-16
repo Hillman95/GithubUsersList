@@ -10,7 +10,7 @@ import android.view.View;
 import com.hillman.githubuserslist.R;
 
 /**
- * Created by hllman on 15.09.17.
+ * Created by hllman
  */
 
 public class DividerItemDecoration extends RecyclerView.ItemDecoration {

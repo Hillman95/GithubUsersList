@@ -17,7 +17,7 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 /**
- * Created by hllman on 14.09.17.
+ * Created by hllman
  */
 
 public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ItemViewHolder> {

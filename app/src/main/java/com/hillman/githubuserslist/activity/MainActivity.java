@@ -3,17 +3,13 @@ package com.hillman.githubuserslist.activity;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.app.AppCompatActivity;
-
 import android.support.v7.widget.Toolbar;
-import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.SearchView;
-
 import com.hillman.githubuserslist.R;
 import com.hillman.githubuserslist.adapters.UsersAdapter;
 import com.hillman.githubuserslist.api.GithubApi;

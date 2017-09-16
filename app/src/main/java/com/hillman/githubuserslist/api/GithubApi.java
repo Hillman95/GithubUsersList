@@ -8,7 +8,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 /**
- * Created by hllman on 13.09.17.
+ * Created by hllman
  */
 
 public interface GithubApi {

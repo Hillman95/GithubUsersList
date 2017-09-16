@@ -1,7 +1,7 @@
 package com.hillman.githubuserslist;
 
 /**
- * Created by hllman on 13.09.17.
+ * Created by hllman
  */
 
 public class Constants {
