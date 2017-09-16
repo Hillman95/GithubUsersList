@@ -4,22 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hillman.githubuserslist.MainActivity">
+    tools:context="com.hillman.githubuserslist.activity.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:titleEnabled="false">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:layout_collapseMode="pin" />
+
+            <RelativeLayout
+                android:layout_margin="8dp"
+                android:id="@+id/searchbox"
+                android:clickable="true"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <SearchView
+                    android:focusableInTouchMode="true"
+                    android:clickable="true"
+                    android:animateLayoutChanges="true"
+                    android:focusable="true"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/border"
+                    android:layout_height="45dp"
+                    android:id="@+id/searchview"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:closeIcon="@android:drawable/ic_menu_close_clear_cancel"
+                    android:searchIcon="@android:drawable/ic_menu_search" />
+
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+   <include layout="@layout/content_main"/>
 
 </android.support.design.widget.CoordinatorLayout>
